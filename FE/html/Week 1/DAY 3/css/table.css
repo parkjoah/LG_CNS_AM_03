@@ -1,0 +1,17 @@
+/* 
+
+선택자 { 속성: 값; 속성: 값} 
+
+*/
+
+#table,
+th,
+td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
