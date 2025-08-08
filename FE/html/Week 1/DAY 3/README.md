@@ -41,11 +41,11 @@
 
 → 반응형 웹의 템플릿 제공
 
-![alt text](image.png)
+![alt text](./NOTE/image.png)
 
 - `<head>` 안에 불러와서 사용 : 헤더에 넣음
 
-![alt text](image-1.png)
+![alt text](./NOTE/image-1.png)
 
 > React는 컴포넌트 기반
 
@@ -59,7 +59,7 @@
 
 ## 태그의 속성
 
-![alt text](image-3.png)
+![alt text](./NOTE/image-3.png)
 
 ---
 
@@ -92,10 +92,10 @@ Single Page Application
 
 대신 앞에 `javascript:`를 붙여줘야 함
 
-![alt text](image-5.png)
+![alt text](./NOTE/image-5.png)
 ⤷ `<a href="alert('클릭')"> 자바스크립트 호출</a>`
 
-![alt text](image-4.png)
+![alt text](./NOTE/image-4.png)
 ⤷ `<a href="javascript:alert('클릭')"> 자바스크립트 호출</a>`
 
 ---
@@ -109,7 +109,7 @@ Single Page Application
 
 ⤷ 둘다 async 비동기 통신
 
-![alt text](image-6.png)
+![alt text](./NOTE/image-6.png)
 
 ---
 
@@ -162,7 +162,7 @@ Single Page Application
 
 ⤷ 간단한 css 주면?
 
-![alt text](image-8.png)
+![alt text](./NOTE/image-8.png)
 
 ```
 #table,
@@ -172,7 +172,7 @@ td {
 }
 ```
 
-![alt text](image-9.png)
+![alt text](./NOTE/image-9.png)
 
 ⤷ 패딩 추가?
 
@@ -183,14 +183,14 @@ td {
 }
 ```
 
-![alt text](image-10.png)
+![alt text](./NOTE/image-10.png)
 
 ⤷ ` border-collapse: collapse;` 추가?
-![alt text](image-11.png)
+![alt text](./NOTE/image-11.png)
 
 ### ⤷ 몰랐던 부분 ?
 
-![alt text](image-12.png)
+![alt text](./NOTE/image-12.png)
 
 `<colgroup>` 으로 body안에서 디자인 수정 가능함
 
@@ -200,7 +200,7 @@ td {
 
 인풋에 name넣고 `<form action="./thanks.html" method="get">`로 넘기면
 
-![alt text](image-13.png)
+![alt text](./NOTE/image-13.png)
 
 이런식으로 name 속성을 넣으면 param으로 넘어감
 
