@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>에디오피아 커피</h1>
+      <img src="../../img/coffee-blue.webp" width="200" height="200" />
+    </div>
+    <div>
+      <button type="button">헤딩과 이미지속성 변경</button>
+    </div>
+    <script>
+      /*
+            요구사항 :
+            - step 01 : 버튼의 이벤트를 감지하는 함수 정의
+            - step 02 : 이벤트 발생시 h1,img, 태그에 접근하고
+            - step 03 : 이미지 src 속성에 접근해서 coffed-pink 이미지로 변경
+            - step 04 : h1 접근해서 텍스트를 LGCNS 커피로 변경
+            - 필요에 따라서 태그에 선택자를 정의할 수 있으며, 이벤트 처리함수는 람다식으로
+            */
+
+      const btn = document.querySelector("button");
+      const hNode = document.querySelector("div > h1");
+      const imgNode = document.querySelector("div > img");
+      const [t1, t2] = [hNode.textContent, "LGCNS 커피"];
+      const [s1, s2] = [imgNode.src, "../../img/coffee-pink.webp"];
+
+      const btnClick = () => {
+        [hNode.textContent, imgNode.src] = [
+          hNode.textContent === t1 ? t2 : t1,
+          imgNode.src === s1 ? s2 : s1,
+        ];
+      };
+
+      btn.addEventListener("click", btnClick);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>현재시간 : </label>
+    <span id="time"></span>
+
+    <hr />
+
+    <a href="google.com">google</a>
+    <a href="naver.com">naver</a>
+    <a href="lgcns.com">lgcns</a>
+
+    <hr />
+
+    <p class="result"></p>
+
+    <script>
+      //let spanNode = document.querySelector("#time");
+      let spanNode = document.getElementById("#time");
+      // new 연산자를 이용한 객체 생성
+      current = new Date();
+
+      //tag의 body로 텍스트를 삽입하고자 할 때는 textContent 속성을 사용
+      spanNode.textContent = current.toLocalString();
+
+      // 식별값이 없을 때 태그명으로 접근할 수 있는데 :  getElementsByTagName();
+
+      const lst = document.getElementsByTagName("a");
+      for (idx = 0; idx < lst.length; idx++) {
+        console.log("text", lst[idx].text);
+        console.log("property", lst[idx].href);
+      }
+
+      //클래스 이름으로 태그에 접근
+      const pNode = document.getElementsByClassName("result");
+    </script>
+  </body>
+</html>
