@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      .usersWr {
+        display: flex;
+        width: 300px;
+      }
+
+      .userInfo {
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+      }
+
+      h4 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .userInfo div p {
+        margin: 0;
+        color: #7a7a7a;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    주어진 엔드포인트를 이용해서 통신하시고 내려받은 데이터를 화면에 본인이
+    원하는 스타일 적용하셔서 실습 진행하시면 됩니다~~ 
+    -->
+    <h2>USERS</h2>
+    <div id="usersWr"></div>
+    <script>
+      async function getData() {
+        await axios
+          .get("https://jsonplaceholder.typicode.com/users")
+          .then((res) => {
+            const data = res.data;
+            console.log(data);
+            const usersWr = document.querySelector("#usersWr");
+            data.forEach((user) => {
+              const userInfo = document.createElement("div");
+              userInfo.className = "userInfo";
+              userInfo.innerHTML = `
+              <div>
+                <h4>${user.username}</h4>
+                <p>(${user.name})<p>
+              </div>
+              <p>${user.email}<p>
+              <a>${user.website}</a>
+              
+              `;
+              usersWr.appendChild(userInfo);
+            });
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+      getData();
+    </script>
+  </body>
+</html>
