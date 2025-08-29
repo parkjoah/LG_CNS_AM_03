@@ -1,0 +1,54 @@
+.container {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.card-title {
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 20px;
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+.card-list {
+  width: 1000px;
+}
+.card {
+  border: 1px solid blue;
+  margin: 10px 0;
+  display: inline-block;
+  width: 200px;
+  margin-right: 30px;
+  border-radius: 10px;
+
+  /* 위치 조절할 때 많이 사용함 */
+  /* float: right; */
+  padding: 5px;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 30%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+}
+
+[type="button"] {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+[type="button"]:hover {
+  background-color: rgb(104, 124, 117);
+  border: none;
+  color: aliceblue;
+}

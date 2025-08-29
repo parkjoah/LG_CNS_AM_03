@@ -1,0 +1,41 @@
+.accent {
+  color: red;
+}
+
+/* 
+
+px : 화면의 실제 픽셀 수를 기준으로...(기본 폰트 사이즈 16px )
+em : 상대적 (부모 요소의 글꼴크기를 기준으로 계산) : 1.5em => 16px * 1.5 = 24px
+
+*/
+.txt-sm {
+  font-size: 0.7em;
+}
+
+h2 {
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  /* border: 1px solid red; */
+  line-height: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*
+
+h2[text="customer"]{} 
+
+-> 그냥 아래처럼 써도 됨
+
+[text="customer"]{}
+
+*/
+
+[text="customer"] {
+  color: blue;
+}
