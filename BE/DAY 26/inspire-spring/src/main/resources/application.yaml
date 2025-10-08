@@ -1,0 +1,20 @@
+#property
+# spring.application.name=inspire-spring
+
+#yaml
+spring:
+  application:
+    name: inspire-spring
+
+  # DB setting
+  datasource:
+    driver-class-name:
+    url: jdbc:mysql://localhost:3306/inspire
+    username: root
+    password: 123456789
+
+server:
+  port: 8080
+#
+
+# DB setting
